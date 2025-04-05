@@ -61,7 +61,7 @@ cmd({
         'quoted': _0x4807fa
       });
       await _0x488fe3.sendMessage(_0x49635a, {
-        'text': "⚠️💎 CASEYRHODES XMD 💎 Links are not allowed in this group.\n@" + _0x36e9e2.split('@')[0x0] + " has been removed. 🚫",
+        'text': "⚠️⚧️ᴄᴀsᴇʏʀʜᴏᴅᴇs xᴍᴅ ⚠️❗ʟɪɴᴋs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ɪɴ ɢʀᴏᴜᴘ.\n@" + _0x36e9e2.split('@')[0x0] + " ʜᴀs ʙᴇᴇɴ ʀᴇᴍᴏᴠᴇᴅ. 🚫",
         'mentions': [_0x36e9e2]
       }, {
         'quoted': _0x4807fa

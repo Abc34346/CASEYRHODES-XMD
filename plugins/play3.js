@@ -275,7 +275,7 @@ cmd({
 
 
 cmd({  
-  pattern: "video",  
+  pattern: "song",  
   alias: ["video"],  
   react: '⚡',  
   desc: "Download video from YouTube",  
