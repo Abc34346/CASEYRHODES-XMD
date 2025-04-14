@@ -22,7 +22,7 @@ let repo =`
 *|* https://github.com/caseyweb/CASEYRHODES XMD
 
 > *SUPPORT GROUP:*
-*|* https://whatsapp.com/channel/0029VaoRxGmJpe8lgCqT1T2h
+*|* https://whatsapp.com/channel/0029Vb5FRYcDzgT39Qiu5S3h
 *╰──────────────●●►*
 
 > *CREATED BY CASEYRHODES TECH*
@@ -70,7 +70,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/caseyweb/CASEYRHODES-XMD';
+    const githubRepoURL = 'https://whatsapp.com/channel/0029Vb5FRYcDzgT39Qiu5S3h';
 
     try {
         // Extract username and repo name from the URL
