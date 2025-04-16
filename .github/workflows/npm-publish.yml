@@ -8,15 +8,11 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # This will run the workflow every day at midnight UTC
+    - cron: '0 19 * * *'  # This will start the workflow every day at midnight PKT (19:00 UTC)
 
 jobs:
-  build:
+  run-continuously:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20.x]
 
     steps:
       - name: Checkout repository
@@ -25,10 +21,17 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '20.x'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Start application
-        run: npm start
+      - name: Start application for 24 hours
+        run: |
+          # Start the application in the background
+          nohup npm start &
+          APP_PID=$!
+          # Sleep for 24 hours
+          sleep 86400
+          # Optionally kill the application if needed
+          kill $APP_PID
