@@ -19,7 +19,7 @@ let repo =`
 *|* *CASEYWEB*
 
 > *CASEYWEB REPO:*
-*|* https://github.com/caseyweb/CASEYRHODES XMD
+*|* https://github.com/caseyweb/tech
 
 > *SUPPORT GROUP:*
 *|* https://whatsapp.com/channel/0029Vb5FRYcDzgT39Qiu5S3h
@@ -86,7 +86,7 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         // Format the repository information
-        const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 𝐂𝐀𝐒𝐄𝐘𝐑𝐇𝐎𝐃𝐄𝐒-𝐗𝐌𝐃 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!😇👑* 
+        const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 TECH-𝐗𝐌𝐃 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!😇👑* 
 
 > *sɪᴍᴘʟᴇ, ɪᴄʏ, ᴄᴏʟᴅ  & ʀɪᴄʜ ʟᴏᴀᴅᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ᴀᴍᴀᴢɪɴɢ ғᴇᴀᴛᴜʀᴇs, ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ.*❄️
 
@@ -94,7 +94,7 @@ async (conn, mek, m, { from, reply }) => {
 
 > *ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ sᴛᴀʀ & ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ🌟🍴*
 
-https://github.com/caseyweb/CASEYRHODES-XMD
+https://github.com/caseyweb/TECH-XMD
 ──────────────────
 ${readMore}
 \`BOT NAME:\`❄️
