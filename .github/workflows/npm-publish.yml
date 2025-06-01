@@ -8,7 +8,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 12 * * *'  # This will start the workflow every day at midnight PKT (19:00 UTC)
+    - cron: '0 10 * * *'  # This will start the workflow every day at midnight PKT (19:00 UTC)
 
 jobs:
   run-continuously:
