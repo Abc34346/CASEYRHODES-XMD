@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]  # choose what you need
 
     steps:
       - name: Checkout code
@@ -17,20 +20,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '${{ matrix.node-version }}'
 
       - name: Install dependencies
-        run: |
-          if [ -f package.json ]; then
-            npm install || true
-          else
-            echo "No package.json found."
-          fi
+        run: npm ci  # or npm install
 
-      - name: Run the bot
-        run: |
-          if [ -f index.js ]; then
-            node index.js
-          else
-            echo "No index.js found to run"
-          fi
+      - name: Run tests / build
+        run: npm test  # or your custom command (e.g., node index.js)
