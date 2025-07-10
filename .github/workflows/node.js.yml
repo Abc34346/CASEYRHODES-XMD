@@ -1,17 +1,16 @@
-name: Node.js CI
+name: 24/7 Node Bot Runner
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  schedule:
+    - cron: "*/15 * * * *" # Every 15 minutes (you can adjust this)
+  workflow_dispatch:       # Allows manual trigger from GitHub UI
 
 jobs:
-  build:
+  run-bot:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -20,7 +19,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install  # ← this works without package-lock.json
+        run: npm install
 
       - name: Run bot
-        run: node index.js  # or whatever your start file is
+        run: node index.js
