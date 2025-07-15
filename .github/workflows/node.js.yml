@@ -1,4 +1,4 @@
-name: 24/7 Node Bot Runner
+name: ci
 
 on:
   schedule:
